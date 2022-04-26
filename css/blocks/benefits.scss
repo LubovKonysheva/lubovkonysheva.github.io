@@ -1,0 +1,70 @@
+.benefits {
+  display: flex;
+}
+
+.benefits__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 54px;
+    right: 0;
+    content: url(/img/design/shape.png);
+    transform: translateX(50%);
+
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+}
+
+.benefit {
+  text-align: center;
+}
+
+.benefit__image-wrapper {
+  display: inline-block;
+  width: 126px;
+  height: 126px;
+  position: relative;
+  background-color: $gray;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.benefit__image {
+  margin-bottom: 10px;
+}
+
+.benefit__icon {
+  width: 68px;
+  height: 68px;
+  top: 50%;
+  left: 50%;
+  transform: translate(42%, 41%);
+}
+
+.benefit__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #292929;
+  margin-bottom: 7px;
+}
+
+.benefit__desc {
+  font-weight: 400;
+  font-size: 16px;
+  color: #666666;
+  padding: 0 5px 0;
+}

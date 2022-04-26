@@ -1,0 +1,74 @@
+.humans {
+  display: flex;
+}
+
+.humans__item {
+    margin-right: 20px;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+}
+
+.human {
+  display: flex;
+  justify-content: center;
+}
+
+.human__photo {
+  max-width: 220px;
+  max-height: 290px;
+  margin-bottom: 15px;
+}
+
+.human {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.human__desc {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+}
+
+.human__desc-class {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.human__desc-name:focus ~ .human__desc-class { 
+  display: block; 
+  margin-left: 3px;
+  }
+
+.human__desc-name {
+  font-weight: 700;
+  text-align: center;
+
+  &::after {
+    content: url(/img/design/triangle_small.png);
+    margin-left: 3px;
+  }
+}
+
+.human__photo-img {
+  max-height: 290px;
+  max-width: 220px;
+}
+
+.human__desc-class__title {
+  color: #292929;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.human__desc-class__text {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #666666;
+}

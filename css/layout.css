@@ -1,0 +1,70 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Play", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.42;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  min-width: 1120px;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
