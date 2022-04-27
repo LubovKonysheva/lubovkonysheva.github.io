@@ -3,16 +3,15 @@ html, body {
 }
 
 body {
-  font-family: "Play", Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: 'Play', Helvetica, sans-serif;
+  font-size: $baseFontSize;
   line-height: 1.42;
   -moz-osx-font-smoothing: grayscale;
   background: #fff;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 button {
@@ -24,13 +23,12 @@ button {
 .wrapper {
   position: relative;
   min-height: 100%;
-  min-width: 1120px;
   overflow: hidden;
 }
 
 .container {
   margin: 0 auto;
-  width: 1100px;
+  width: $containerWidth;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,9 +52,9 @@ p {
 ul {
   padding: 0;
   margin: 0;
-}
-ul li {
-  list-style: none;
+  li {
+    list-style: none;
+  }
 }
 
 footer {

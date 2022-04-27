@@ -3,20 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=1100, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Play:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
   <title>Beats</title>
 </head>
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section class="hero">
+      <section class="section hero">
         <div class="container hero__container">
         <header class="header">
           <img src="/img/main/Vector_logo.png" alt="beats logo" class="logo">
@@ -55,9 +52,9 @@
         <div class="hero__title-section">
           <h1 class="hero__main-title">Беспроводные наушники Beats Solo 3</h1>
           <div class="hero__title--desc">Встречайте новую версию наушников из линейки Powerbeats.</div>
-        </div>
-        <div class="hero__btn">
-          <a href="#" class="btn">Заказать</a>
+          <div class="hero__btn">
+            <a href="#" class="btn">Заказать</a>
+          </div>
         </div>
         <div class="hero__icons-section">
           <ul class="features">
@@ -83,7 +80,7 @@
         </div>
       </div>
       </section>
-      <section class="section__benefits">
+      <section class="section section--benefits">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">Почему beats solo 3?</h2>
@@ -138,7 +135,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section__team">
+      <!-- <section class="section section--team">
         <div class="container team__container">
           <div class="section__team-title">
             <h1 class="team__title">Команда</h1>
@@ -195,14 +192,14 @@
           </ul>
         </div>
       </section> -->
-      <!-- <section class="section__vertical-menu">
+      <!-- <section class="section section--vertical-menu">
         <div class="container">
           <img src="/img/vertical_slider/Slider.png" alt="vertical slide menu" class="vertical-menu">
         </div>
       </section> -->
-      <section class="section__rewiev">
+      <section class="section section--rewiev">
         <div class="container">
-          <h2 class="section__title">Отзывы</h2>
+          <h2 class="section__title section__title--rewievs">Отзывы</h2>
           <div class="rewievs">
             <div class="rewievs__display">
               <div class="rewievs__display-inner">
@@ -220,27 +217,24 @@
             </div>
             <ul class="rewievs__switcher">
               <li class="rewievs__switcher-item interactive-avatar interactive-avatar--active">
-                <a href="#" class="interactive-avatar__link"></a>
-                <img src="/img/feedback/billy_big.png" alt="photo" class="interactive-avatar__img">
+                <a href="#" class="interactive-avatar__link"><img src="/img/feedback/billy_big.png" alt="photo" class="interactive-avatar__img"></a>
               </li>
               <li class="rewievs__switcher-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link"></a>
-                <img src="/img/feedback/marry-big.png" alt="photo" class="interactive-avatar__img">
+                <a href="#" class="interactive-avatar__link"><img src="/img/feedback/marry-big.png" alt="photo" class="interactive-avatar__img"></a>
               </li>
               <li class="rewievs__switcher-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link"></a>
-                <img src="/img/feedback/vadim_big.png" alt="photo" class="interactive-avatar__img">
+                <a href="#" class="interactive-avatar__link"><img src="/img/feedback/vadim_big.png" alt="photo" class="interactive-avatar__img"></a>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <!-- <section class="section__video">
+      <!-- <section class="section section--video">
         <div class="container video-container">
           <img src="/video/img.png" alt="video" class="video-content">
         </div>
       </section> -->
-      <section class="section__order section--font-colorwhite">
+      <section class="section section--order section--font-colorwhite">
         <div class="container">
           <h2 class="order__title">Закажите доставку</h2>
           <form class="form">
@@ -284,39 +278,39 @@
               <div class="form__row form__row--flow">
                 <label class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea class="form__input form__input--textarea"></textarea>
+                  <textarea class="input__form form__input form__input--textarea"></textarea>
                 </label>
-                <div class="form__row form__row--flow">
-                  <div class="form__controls">
-                    <label class="radio">
-                      <input type="checkbox" name="option" class="radio__elem">
-                      <div class="radio__visible"></div>
-                      <div class="radio__title">Потребуется сдача</div>
-                    </label>
-                    <label class="radio">
-                      <input type="checkbox" name="option" class="radio__elem">
-                      <div class="radio__visible"></div>
-                      <div class="radio__title">Оплата картой</div>
-                    </label>
-                  </div>
-                  <div class="form__controls">
-                    <label class="radio radio__checkbox">
-                      <input type="checkbox" name="option" class="radio__elem">
-                      <div class="radio__visible"></div>
-                      <div class="radio__title">Не перезванивать</div>
-                    </label>
-                  </div>
-                  <div class="form__btns">
-                    <input type="submit" value="Заказать" class="btn--theme--lightred">
-                    <input type="reset" value="Очистить" class="btn--theme--transparent">
-                  </div>
+              </div>
+              <div class="form__row form__row--flow">
+                <div class="form__controls">
+                  <label class="radio">
+                    <input type="radio" name="option" class="radio__elem">
+                    <div class="radio__visible"></div>
+                    <div class="radio__title">Потребуется сдача</div>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="option" class="radio__elem">
+                    <div class="radio__visible"></div>
+                    <div class="radio__title">Оплата картой</div>
+                  </label>
+                </div>
+                <div class="form__controls">
+                  <label class="radio radio__checkbox">
+                    <input type="checkbox" name="option" class="radio__elem">
+                    <div class="radio__visible"></div>
+                    <div class="radio__title">Не перезванивать</div>
+                  </label>
+                </div>
+                <div class="form__btns">
+                  <input type="submit" value="Заказать" class="btn--theme--lightred">
+                  <input type="reset" value="Очистить" class="btn--theme--transparent">
                 </div>
               </div>
             </div>
           </form>
         </div>
       </section>
-      <!-- <section class="section__map">
+      <!-- <section class="section section--map">
         <div class="container">
           <img src="/img/map/map.png" class="section__map-img" alt="map">
         </div>

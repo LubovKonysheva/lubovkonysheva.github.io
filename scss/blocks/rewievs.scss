@@ -1,6 +1,6 @@
 .rewievs__display {
   background-color: $gray;
-  padding: 42px;
+  padding: 42px 142px 42px 42px;
   margin-bottom: 15px;
   overflow: hidden;
   position: relative;
@@ -24,8 +24,8 @@
 }
 
 .rewievs__avatar {
-  width: 264px;
-  height: 253px;
+  width: 253px;
+  height: 263px;
   margin-right: 40px;
 }
 
@@ -37,6 +37,7 @@
 
 .rewievs__content {
   flex: 1;
+  padding-top: 30px;
 }
 
 .rewievs__title {
@@ -50,6 +51,7 @@
   font-size: 16px;
   color: #666666;
   margin-bottom: 36px;
+  line-height: 1.25;
 }
 
 .rewievs__autor {

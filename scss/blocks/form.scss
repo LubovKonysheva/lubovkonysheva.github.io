@@ -13,7 +13,7 @@
 
 .form__row {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .form__row--flow{
@@ -44,21 +44,22 @@
 }
 
 .form__input--textarea {
-  width: 450px;
-  height: 174px;
+  // width: 450px;
+  height: 154px;
   border: none;
   padding: 18px 11px;
   border: solid 2px transparent;
   // border: solid 3px $red;
   resize: none;
   border-radius: 1%;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
   &:focus {
     border-color: $red;
     outline: none;
   }
 }
+
 
 .form__controls {
   display: flex;
@@ -76,5 +77,5 @@
 }
 
 .form__btns {
-  margin-top: 55px;
+  margin-top: 34px;
 }

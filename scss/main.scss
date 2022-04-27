@@ -1,4 +1,4 @@
-$containerWidth: 936px;
+$containerWidth: 940px;
 $baseFontSize: 18px;
 
 //z-fixed-menu
@@ -10,7 +10,7 @@ $red: #E01F3D;
 $black: #181818;
 
 //setups
-@import url(/css/normalize/normalize.css);
+@import "normalize/normalize";
 @import "layout";
 @import "blocks/hero";
 @import "blocks/header";
@@ -32,5 +32,6 @@ $black: #181818;
 @import "blocks/social";
 @import "blocks/menu";
 @import "blocks/phone";
+@import "blocks/logo";
 
 
