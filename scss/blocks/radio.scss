@@ -2,8 +2,13 @@
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 24px;
-  margin-bottom: 16px;
+  margin-right: rem(24px);
+  margin-bottom: rem(16px);
+
+  @include phones {
+    margin-bottom: rem(10px);
+  }
+
   }
 
 .radio__checkbox .radio__visible {
@@ -11,8 +16,8 @@
 
   &::before {
     background: url(/img/form/checkmark.png) no-repeat;
-    left: 15px;
-    top: 16px;
+    left: rem(15px);
+    top: rem(16px);
   }
 }
 
@@ -27,17 +32,17 @@
 }
 
 .radio__visible {
-  width: 25px;
-  height: 25px;
+  width: rem(25px);
+  height: rem(25px);
   position: relative;
   border-radius: 50%;
   background-color: #fff;
-  margin-right: 10px;
+  margin-right: rem(10px);
 
   &::before {
     content: "";
-    width: 13px;
-    height: 13px;
+    width: rem(13px);
+    height: rem(13px);
     background-color: $red;
     border-radius: 50%;
     position: absolute;
@@ -49,6 +54,6 @@
 }
 
 .radio__title {
-  font-size: 16px;
+  font-size: rem(16px);
 }
 

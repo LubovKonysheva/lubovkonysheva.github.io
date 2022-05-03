@@ -1,32 +1,49 @@
 .rewievs__display {
   background-color: $gray;
-  padding: 42px 142px 42px 42px;
-  margin-bottom: 15px;
+  padding: rem(42px) rem(142px) rem(42px) rem(42px);
+  margin-bottom: rem(15px);
   overflow: hidden;
   position: relative;
+
+  @include tablets {
+    padding: rem(75px) rem(36px) rem(25px) rem(36px);
+    margin-bottom: rem(35px);
+  }
 
   &::before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 }
 
 .rewievs__display-inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .rewievs__avatar {
-  width: 253px;
-  height: 263px;
-  margin-right: 40px;
+  width: rem(253px);
+  height: rem(263px);
+  margin-right: rem(40px);
+
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+    margin-right: 0;
+  }
 }
 
 .rewievs__avatar-img {

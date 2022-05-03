@@ -2,18 +2,18 @@
 .social-media__link {
   display: block;
   text-decoration: none;
-  width: 36px;
-  height: 36px;
+  width: rem(36px);
+  height: rem(36px);
   background: center center no-repeat;
 } 
 
 .social-media__list {
-  margin-right: 54px;
+  margin-right: rem(54px);
 }
 
 .social-media__item {
   display: inline-block;
-  margin-right: 5px;
+  margin-right: rem(5px);
   border-radius: 50%;
 }
 
