@@ -2,8 +2,8 @@
 
 .header {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: inherit;
 }
 
 .phone-number.header__phone-number {

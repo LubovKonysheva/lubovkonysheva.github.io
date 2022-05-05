@@ -11,11 +11,6 @@
   font-size: rem(16px);
   border: none;
 
-  @include phones {
-    padding: rem(25px) rem(50px);
-    font-size: rem(19px);
-  }
-
   &:hover {
     color: $red;
     background-color: #fff;

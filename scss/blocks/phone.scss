@@ -3,13 +3,30 @@
   align-items: center;
   color: #292929;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: rem(2px);
+
+  @include tablets {
+    color: #E01F3D;
+  }
+
+  @include phones {
+    color: #292929;
+  }
 }
 
 .phone-number__icon-elem {
   margin-right: rem(6px);
   width: rem(14px);
   height: rem(13.78px);
+  filter: grayscale(100%);
+
+  @include tablets {
+    filter: grayscale(0%);
+  }
+
+  @include phones {
+    filter: grayscale(100%);
+  }
 }
 
 .phone-number__text {

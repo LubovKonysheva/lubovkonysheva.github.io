@@ -1,7 +1,5 @@
 
 .menu {
-margin: 0 30px;
-
   @include tablets {
     display: none;
   }
@@ -12,7 +10,7 @@ margin: 0 30px;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: rem(10px);
 }
 
 .menu_link {

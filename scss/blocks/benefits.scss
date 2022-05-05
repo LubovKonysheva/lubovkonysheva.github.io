@@ -17,8 +17,9 @@
 
   @include phones {
     padding: 0;
-    margin-bottom: 19px;
+    margin-bottom: rem(19px);
 }
+
 
   &::before {
     position: absolute;
@@ -27,22 +28,17 @@
     content: url(/img/design/shape.png);
     transform: translateX(50%);
 
+    &:first-child {
+      padding-left: 0;
+    }
+    }
     @include phones {
       display: none;
   }
-
-  &:first-child {
-    padding-left: 0;
-  }
-  &:last-child {
-    padding-right: 0;
-
-    &::before {
-      display: none;
-    }
   }
 
-  }
+.benefits__item:last-child::before {
+  display: none;
 }
 
 .benefit {
@@ -72,12 +68,13 @@
 }
 }
 
-.benefit__icon {
+.benefit__pic {
   width: rem(68px);
   height: rem(68px);
   top: 50%;
   left: 50%;
   transform: translate(42%, 41%);
+  display: flex;
 }
 
 .benefit__text {
@@ -90,16 +87,21 @@
   font-weight: 700;
   font-size: rem(24px);
   color: #292929;
-  margin-bottom: rem(7px);
+  margin-bottom: 0;
 }
 
 .benefit__desc {
   font-weight: 400;
   font-size: rem(16px);
   color: #666666;
-  padding: 0 rem(5px) 0;
+  padding: 0 6% 0;
+  line-height: 1.2;
 
   @include phones {
     padding: 0;
   }
+}
+
+.benefit__pic {
+  fill: black;
 }

@@ -54,20 +54,20 @@
 
 .rewievs__content {
   flex: 1;
-  padding-top: 30px;
+  padding-top: rem(30px);
 }
 
 .rewievs__title {
   font-weight: 700;
-  font-size: 24px;
-  margin-bottom: 22px;
+  font-size: rem(24px);
+  margin-bottom: rem(22px);
 }
 
 .rewievs__text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: rem(16px);
   color: #666666;
-  margin-bottom: 36px;
+  margin-bottom: rem(36px);
   line-height: 1.25;
 }
 

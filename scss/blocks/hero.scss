@@ -20,7 +20,7 @@
 }
 
 .hero__container {
-  padding: rem(24px) 0 rem(96px) 0;
+  padding: rem(24px) 0;
   height: 90%;
   background: url(/img/main/Ellipse_5.png) right center / 50% auto no-repeat;
 
@@ -68,17 +68,16 @@
 
 .hero__main-title {
   font-weight: 700;
-  font-size: 48px;
+  font-size: rem(48px);
   text-transform: uppercase;
   color: #292929;
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: rem(21px);
-  margin-top: rem(40px);
+  margin: rem(92px) 0 rem(18px) 0;
 
   @include tablets {
     padding: 0 6%;
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
   }
 
   @include phones {
@@ -96,12 +95,13 @@
   line-height: rem(25px);
   color: #292929;
   margin-bottom: rem(20px);
+  line-height: 1.4;
 
   @include tablets {
     padding: 0 25%;
   }
 
   @include phones {
-    padding: 0 17%;
+    padding: 0 14%;
   }
 }
