@@ -8,8 +8,13 @@
   display: none;
 
   @include tablets {
-  display: inline-flex;
-  }
+    display: inline-flex;
+
+    &.is-active::before {
+      content: url(/img/main/close.png);
+      z-index: 5;
+    }
+    }
 }
 
 .hamburger__plank {

@@ -21,7 +21,6 @@
 
 .hero__container {
   padding: rem(24px) 0;
-  height: 90%;
   background: url(/img/main/Ellipse_5.png) right center / 50% auto no-repeat;
 
   @include tablets {
@@ -56,6 +55,12 @@
         background: url(/img/main/Ellipse_tablets.png) center center / contain no-repeat;
         margin-bottom: rem(15px);
       }
+
+      @include phones {
+        &::before {
+          margin-bottom: rem(-50px);
+        }
+      }
     }
 
 }
@@ -81,9 +86,9 @@
   }
 
   @include phones {
-    padding: 0 7%;
+    padding: 0 8%;
     margin-bottom: rem(20px);
-    font-size: rem(36px);
+    font-size: rem(32px);
     line-height: rem(36px);
   }
 }
@@ -103,5 +108,6 @@
 
   @include phones {
     padding: 0 14%;
+    line-height: 1.15;
   }
 }

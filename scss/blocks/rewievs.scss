@@ -10,6 +10,11 @@
     margin-bottom: rem(35px);
   }
 
+  @include phones {
+    padding: rem(39px) rem(36px) rem(25px) rem(36px);
+    margin-bottom: rem(35px);
+  }
+
   &::before {
     content: "";
     display: block;

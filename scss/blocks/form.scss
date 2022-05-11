@@ -27,7 +27,13 @@
 
 .form__btns {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  margin-top: rem(34px);
+
+  @include tablets {
+    justify-content: center;
+  }
+
 }
 
 .form__row {
@@ -107,8 +113,4 @@
 
 .form__title {
   font-size: rem(16px);
-}
-
-.form__btns {
-  margin-top: rem(34px);
 }

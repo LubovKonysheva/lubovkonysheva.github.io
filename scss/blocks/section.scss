@@ -6,10 +6,6 @@
   justify-content: center;
   position: relative;
 
-  @include phones {
-    height: 105vh;
-  }
-
   &--benefits {
     &::before {
       position: absolute;

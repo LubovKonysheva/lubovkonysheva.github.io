@@ -17,7 +17,7 @@
         <div class="container hero__container">
         <header class="header">
           <img src="/img/main/Vector_logo.png" alt="beats logo" class="logo">
-          <nav class="menu">
+          <nav class="menu" id="hamburgerMenu">
             <ul class="menu_list">
               <li class="menu_item">
                 <a href="#" class="menu_link">О нас</a>
@@ -48,11 +48,12 @@
             </span>
             <span class="phone-number__text">8 800 903 90 90</span>
           </a>
-          <a href="" class="hamburger">
+          <a href="" class="hamburger" id="hamburgerButton">
             <span class="hamburger__plank"></span>
             <span class="hamburger__plank"></span>
             <span class="hamburger__plank"></span>
           </a>
+          <script src="/js/hamburger-menu.js"></script>
         </header>
         <div class="hero__title-section">
           <h1 class="hero__main-title">Беспроводные наушники Beats Solo 3</h1>
@@ -152,63 +153,174 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section section--team">
+      <section class="section shop">
+        <div class="container shop__container shop-slider-container">
+            <a class="shop__arrow-left" id="left" href="#">
+              <!-- <svg class="depiction__img">
+                <use xlink:href="/img/sprite/shop/all.svg#left"/>
+              </svg> -->
+            </a>
+            <div class="shop__slider">
+              <ul class="shop__list" id="items">
+                <li class="shop__items">
+                  <div class="shop__inner">
+                    <div class="shop__depiction">
+                      <a href="#" class="depiction__link">
+                        <svg class="depiction__img">
+                          <use xlink:href="/img/sprite/shop/all.svg#menu"/>
+                        </svg>
+                      </a>
+                      <div class="depiction__compound">
+                        <ul class="compound">
+                          <li class="compound__item">
+                            <svg class="compound__img">
+                              <use xlink:href="/img/sprite/shop/all.svg#bluetooth"/>
+                            </svg>
+                            <div class="compound__text">Bluetooth</div>
+                            <div class="compound__mean">4.0</div>
+                          </li>
+                          <li class="compound__item">
+                            <svg class="compound__img">
+                              <use xlink:href="/img/sprite/shop/all.svg#road"/>
+                            </svg>
+                            <div class="compound__text">Дальность</div>
+                            <div class="compound__mean">12 м</div>
+                          </li>
+                          <li class="compound__item">
+                            <svg class="compound__img">
+                              <use xlink:href="/img/sprite/shop/all.svg#charger"/>
+                            </svg>
+                            <div class="compound__text">Зарядка</div>
+                            <div class="compound__mean">3 ч</div>
+                          </li>
+                          <li class="compound__item">
+                            <svg class="compound__img">
+                              <use xlink:href="/img/sprite/shop/all.svg#kg"/>
+                            </svg>
+                            <div class="compound__text">Вес</div>
+                            <div class="compound__mean">215 гр</div>
+                          </li>
+                          <li class="compound__item">
+                            <svg class="compound__img">
+                              <use xlink:href="/img/sprite/shop/all.svg#patent"/>
+                            </svg>
+                            <div class="compound__text">Гарантия</div>
+                            <div class="compound__mean">1 год</div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="shop__desc">
+                      <img class="shop__desc-img" src="/img/shop/Ellipse_6-tablet.svg">
+                      <h3 class="shop__desc-title">Beats solo 3. Цвет «атласное серебро»</h3>
+                      <div class="shop__desc-subtitle">Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему iPhone — они мгновенно подключатся к нему.</div>
+                    </div>
+                    <div class="shop__thesis">
+                      <ul class="thesis">
+                        <li class="thesis__items">
+                          <div class="thesis_name">Зарядка</div>
+                          <div class="thesis_desc">2 часа</div>
+                        </li>
+                        <li class="thesis__items">
+                          <div class="thesis_name">Вес</div>
+                          <div class="thesis_desc">215 грамм</div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="shop__lower">
+                      <div class="lower__cost">14990</div>
+                      <div class="lower__btn">
+                        <a href="#" class="btn">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="shop__items shop__items--red">
+                  <div class="shop__inner">
+                    <div class="shop__depiction">
+                      <a href="#" class="depiction__link">
+                        <svg class="depiction__img">
+                          <use xlink:href="/img/sprite/shop/all.svg#menu"/>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="shop__desc">
+                      <img class="shop__desc-img" src="/img/shop/Ellipse_6-tablet-red.svg">
+                      <h3 class="shop__desc-title">Beats solo pro. цвет «красный цитрус»</h3>
+                      <div class="shop__desc-subtitle">Беспроводные наушники Solo Pro помогают настроиться на творчество. Для этого предусмотрено два режима прослушивания: режим с активным шумоподавлением и Прозрачный режим.</div>
+                    </div>
+                    <div class="shop__thesis">
+                      <ul class="thesis">
+                        <li class="thesis__items">
+                          <div class="thesis_name">Зарядка</div>
+                          <div class="thesis_desc">2 часа</div>
+                        </li>
+                        <li class="thesis__items">
+                          <div class="thesis_name">Вес</div>
+                          <div class="thesis_desc">215 грамм</div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="shop__lower">
+                      <div class="lower__cost">14990</div>
+                      <div class="lower__btn">
+                        <a href="#" class="btn">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a class="shop__arrow-right" id="right" href="#">
+              <!-- <svg class="depiction__img">
+                <use xlink:href="/img/sprite/shop/all.svg#right"/>
+              </svg> -->
+            </a>
+        </div>
+        <script src="/js/script.js"></script>
+      </section>
+      <section class="section section--team">
         <div class="container team__container">
           <div class="section__team-title">
             <h1 class="team__title">Команда</h1>
           </div>
-          <ul class="humans">
-            <li class="humans__item human">
-              <div class="human__photo">
-                <img src="/img/team/boris.png" class="human__photo-img" alt="boris photo">
-              </div>
-              <div class="human__desc">
+          <ul class="humans" id="teamist">
+            <li class="humans__item human" id="humans__item">
+                <img src="/img/team/boris.png" class="human__photo-img human__photo-img--tablets" alt="boris photo">
                 <button class="human__desc-name">Борис Федорович</button>
                 <div class="human__desc-class">
-                  <div class="human__desc-class__title">Оператор</div>
-                  <div class="human__desc-class__text">Разработал дизайн наушников Baets solo 3</div>
+                  <div class="human__desc-class__title">Главный технолог</div>
+                  <div class="human__desc-class__text">Отвечает за вкусовые качества и калорийность.</div>
                 </div>
-              </div>
             </li>
             <li class="humans__item human">
-              <div class="human__photo">
-                <img src="/img/team/alla.png" class="human__photo-img" alt="alla photo">
-              </div>
-              <div class="human__desc">
+                <img src="/img/team/alla.png" class="human__photo-img human__photo-img--tablets" alt="alla photo">
                 <button class="human__desc-name">Алла Ивановна</button>
                 <div class="human__desc-class">
-                  <div class="human__desc-class__title">Оператор</div>
-                  <div class="human__desc-class__text">Разработал дизайн наушников Baets solo 3</div>
+                  <div class="human__desc-class__title">Специалист по упаковке</div>
+                  <div class="human__desc-class__text">Автор запоминающегося стиля наших батончиков.</div>
                 </div>
-              </div>
             </li>
             <li class="humans__item human">
-              <div class="human__photo">
-                <img src="/img/team/kirill.png" class="human__photo-img" alt="kirill photo">
-              </div>
-              <div class="human__desc">
+                <img src="/img/team/kirill.png" class="human__photo-img human__photo-img--tablets" alt="kirill photo">
                 <button class="human__desc-name">Кирилл Матросов</button>
                 <div class="human__desc-class">
                   <div class="human__desc-class__title">Оператор</div>
                   <div class="human__desc-class__text">Разработал дизайн наушников Baets solo 3</div>
                 </div>
-              </div>
             </li>
             <li class="humans__item human">
-              <div class="human__photo">
-                <img src="/img/team/mila.png" class="human__photo-img" alt="mila photo">
-              </div>
-              <div class="human__desc">
+                <img src="/img/team/mila.png" class="human__photo-img human__photo-img--tablets" alt="mila photo">
                 <button class="human__desc-name">Мила Рыжкова</button>
                 <div class="human__desc-class">
-                  <div class="human__desc-class__title">Оператор</div>
-                  <div class="human__desc-class__text">Разработал дизайн наушников Baets solo 3</div>
+                  <div class="human__desc-class__title">PR, маркетинг</div>
+                  <div class="human__desc-class__text">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
                 </div>
-              </div>
             </li>
           </ul>
         </div>
-      </section> -->
+        <script src="/js/team.js"></script>
+      </section>
       <!-- <section class="section section--vertical-menu">
         <div class="container">
           <img src="/img/vertical_slider/Slider.png" alt="vertical slide menu" class="vertical-menu">

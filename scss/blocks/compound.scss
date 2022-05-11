@@ -1,0 +1,36 @@
+.compound {
+  position: absolute;
+  width: rem(235px);
+  padding: rem(24px);
+  border-radius: 2%;
+  background: rgb(211 211 211 / 95%);
+  opacity: 0;
+}
+
+.compound__item {
+  display: flex;
+  height: rem(30px);
+  margin-bottom: rem(10px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.compound__img {
+  width: 11%;
+  margin-right: rem(12px);
+}
+
+.compound__text {
+  font-weight: 400;
+  font-size: rem(16px);
+  line-height: rem(24px);
+}
+
+.compound__mean {
+  font-weight: 400;
+  font-size: rem(16px);
+  line-height: rem(24px);
+  margin-left: auto;
+}

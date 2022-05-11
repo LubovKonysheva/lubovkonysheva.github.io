@@ -2,9 +2,14 @@
 .social-media__link {
   display: flex;
   text-decoration: none;
-  width: rem(36px);
-  height: rem(36px);
+  width: rem(30px);
+  height: rem(30px);
   background: center center no-repeat;
+
+  @include phones {
+    width: rem(28px);
+    height: rem(28px);
+  }
 } 
 
 .social-media__item {
