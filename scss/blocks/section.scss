@@ -1,23 +1,32 @@
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+
+  @include phones {
+    height: 105vh;
+  }
 
   &--benefits {
     &::before {
       position: absolute;
       content: url(/img/design/triangle.png);
-      bottom: 1279px;
+      bottom: rem(-20px);
       left: 7%;
+
+      @include phones {
+        display: none;
+      }
   }
 }
   &--rewiev {
     &::before {
       position: absolute;
       content: url(/img/design/ellipse.png);
-      bottom: 730px;
+      bottom: rem(-20px);
       left: 7%;
     }
   }
@@ -27,8 +36,15 @@
     &::before {
       position: absolute;
       content: url(/img/design/polygon.png);
-      bottom: 730px;
+      bottom: rem(680px);
       right: 7%;
+
+      @include tablets {
+        bottom: rem(620px);
+      }
+      @include phones {
+        bottom: rem(620px);
+      }
       }
     }
 }
@@ -48,10 +64,10 @@
 
 .section__title {
   font-weight: bold;
-  font-size: 48px;
-  line-height: 52px;
+  font-size: rem(48px);
+  line-height: rem(52px);
   text-transform: uppercase ;
-  margin-bottom: 60px;
+  margin-bottom: rem(60px);
   text-align: center;
 }
 
@@ -60,7 +76,7 @@
 }
 
 .video-container {
-  padding: 100px 0 100px;
+  padding: rem(100px) 0 rem(100px);
   position: relative;
 
   &::before {
@@ -69,11 +85,15 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 268px;
+    top: rem(268px);
   }
 }
 
 .section__title--rewievs {
-  margin-bottom: 32px;
+  margin-bottom: rem(32px);
+
+  @include phones {
+    font-size: rem(32px);
+  }
 }
   

@@ -2,9 +2,14 @@
 
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding-right: 22px;
+  align-items: inherit;
+}
+
+.phone-number.header__phone-number {
+  @include tablets {
+    display: none;
+  }
 }
 
 

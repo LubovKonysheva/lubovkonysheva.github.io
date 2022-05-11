@@ -1,12 +1,22 @@
 
+.menu {
+  @include tablets {
+    display: none;
+  }
+}
+
 .menu_list{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: rem(10px);
 }
 
 .menu_link {
   font-family: "Alegreya Sans";
   color: #292929;
   text-decoration: none;
-  margin-right: 27px;
+  margin-right: rem(27px);
+  white-space: nowrap;
   }

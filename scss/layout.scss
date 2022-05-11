@@ -1,10 +1,17 @@
+html {
+  font-size: $baseFontSize;
+
+  @include phones {
+    font-size: 3.75vmin;
+  }
+}
+
 html, body {
   height: 100%;
 }
 
 body {
   font-family: 'Play', Helvetica, sans-serif;
-  font-size: $baseFontSize;
   line-height: 1.42;
   -moz-osx-font-smoothing: grayscale;
   background: #fff;
@@ -23,12 +30,19 @@ button {
 .wrapper {
   position: relative;
   min-height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
 .container {
   margin: 0 auto;
-  width: $containerWidth;
+  width: 95%;
+  max-width: $containerWidth;
+  position: relative;
+
+  &--benefits {
+    width: 98%;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
