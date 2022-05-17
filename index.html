@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
   <link rel="stylesheet" href="/css/main.css">
   <title>Beats</title>
 </head>
@@ -53,7 +54,6 @@
             <span class="hamburger__plank"></span>
             <span class="hamburger__plank"></span>
           </a>
-          <script src="/js/hamburger-menu.js"></script>
         </header>
         <div class="hero__title-section">
           <h1 class="hero__main-title">Беспроводные наушники Beats Solo 3</h1>
@@ -277,49 +277,98 @@
               </svg> -->
             </a>
         </div>
-        <script src="/js/script.js"></script>
+
       </section>
       <section class="section section--team">
         <div class="container team__container">
           <div class="section__team-title">
             <h1 class="team__title">Команда</h1>
           </div>
-          <ul class="humans" id="teamist">
+          <ul class="humans humans--version--desctop" id="teamist">
             <li class="humans__item human" id="humans__item">
                 <img src="/img/team/boris.png" class="human__photo-img human__photo-img--tablets" alt="boris photo">
-                <button class="human__desc-name">Борис Федорович</button>
+                <button class="human__desc-name" type="button">Борис Федорович</button>
                 <div class="human__desc-class">
-                  <div class="human__desc-class__title">Главный технолог</div>
-                  <div class="human__desc-class__text">Отвечает за вкусовые качества и калорийность.</div>
+                  <div class="human__desc-class-block">
+                    <div class="human__desc-class__title">Главный технолог</div>
+                    <div class="human__desc-class__text">Отвечает за вкусовые качества и калорийность.</div>
+                  </div>
                 </div>
             </li>
             <li class="humans__item human">
                 <img src="/img/team/alla.png" class="human__photo-img human__photo-img--tablets" alt="alla photo">
-                <button class="human__desc-name">Алла Ивановна</button>
+                <button class="human__desc-name" type="button">Алла Ивановна</button>
                 <div class="human__desc-class">
-                  <div class="human__desc-class__title">Специалист по упаковке</div>
-                  <div class="human__desc-class__text">Автор запоминающегося стиля наших батончиков.</div>
+                  <div class="human__desc-class-block">
+                    <div class="human__desc-class__title">Специалист по упаковке</div>
+                    <div class="human__desc-class__text">Автор запоминающегося стиля наших батончиков.</div>
+                  </div>
                 </div>
             </li>
             <li class="humans__item human">
                 <img src="/img/team/kirill.png" class="human__photo-img human__photo-img--tablets" alt="kirill photo">
-                <button class="human__desc-name">Кирилл Матросов</button>
+                <button class="human__desc-name" type="button">Кирилл Матросов</button>
                 <div class="human__desc-class">
-                  <div class="human__desc-class__title">Оператор</div>
-                  <div class="human__desc-class__text">Разработал дизайн наушников Baets solo 3</div>
+                  <div class="human__desc-class-block">
+                    <div class="human__desc-class__title">Оператор</div>
+                    <div class="human__desc-class__text">Разработал дизайн наушников Baets solo 3</div>
+                  </div>
                 </div>
             </li>
             <li class="humans__item human">
                 <img src="/img/team/mila.png" class="human__photo-img human__photo-img--tablets" alt="mila photo">
-                <button class="human__desc-name">Мила Рыжкова</button>
+                <button class="human__desc-name" type="button">Мила Рыжкова</button>
                 <div class="human__desc-class">
-                  <div class="human__desc-class__title">PR, маркетинг</div>
-                  <div class="human__desc-class__text">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
+                  <div class="human__desc-class-block">
+                    <div class="human__desc-class__title">PR, маркетинг</div>
+                    <div class="human__desc-class__text">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+          <ul class="humans humans--version--mobile">
+            <li class="humans__item human">
+                <button class="human__desc-name" type="button">Борис Федорович</button>
+                <div class="human__desc-class">
+                  <div class="human__desc-class-block">
+                    <img src="/img/team/boris.png" class="human__photo-img human__photo-img--tablets" alt="boris photo">
+                    <div class="human__desc-class__title">Главный технолог</div>
+                    <div class="human__desc-class__text">Отвечает за вкусовые качества и калорийность.</div>
+                  </div>
+                </div>
+            </li>
+            <li class="humans__item human">
+                <button class="human__desc-name" type="button">Алла Ивановна</button>
+                <div class="human__desc-class">
+                  <div class="human__desc-class-block">
+                    <img src="/img/team/alla.png" class="human__photo-img human__photo-img--tablets" alt="alla photo">
+                    <div class="human__desc-class__title">Специалист по упаковке</div>
+                    <div class="human__desc-class__text">Автор запоминающегося стиля наших батончиков.</div>
+                  </div>
+                </div>
+            </li>
+            <li class="humans__item human">
+                <button class="human__desc-name" type="button">Кирилл Матросов</button>
+                <div class="human__desc-class">
+                  <div class="human__desc-class-block">
+                    <img src="/img/team/kirill.png" class="human__photo-img human__photo-img--tablets" alt="kirill photo">
+                    <div class="human__desc-class__title">Оператор</div>
+                    <div class="human__desc-class__text">Разработал дизайн наушников Baets solo 3</div>
+                  </div>
+                </div>
+            </li>
+            <li class="humans__item human">
+                <button class="human__desc-name" type="button">Мила Рыжкова</button>
+                <div class="human__desc-class">
+                  <div class="human__desc-class-block">
+                    <img src="/img/team/mila.png" class="human__photo-img human__photo-img--tablets" alt="mila photo">
+                    <div class="human__desc-class__title">PR, маркетинг</div>
+                    <div class="human__desc-class__text">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
+                  </div>
                 </div>
             </li>
           </ul>
         </div>
-        <script src="/js/team.js"></script>
       </section>
       <!-- <section class="section section--vertical-menu">
         <div class="container">
@@ -331,28 +380,60 @@
           <h2 class="section__title section__title--rewievs">Отзывы</h2>
           <div class="rewievs">
             <div class="rewievs__display">
-              <div class="rewievs__display-inner">
-                <div class="rewievs__avatar">
-                  <img src="/img/feedback/billy_big.png" alt="photo" class="rewievs__avatar-img">
-                </div>
-                <article class="rewievs__content">
-                  <h3 class="rewievs__title">Отличный звук</h3>
-                  <div class="rewievs__text">
-                    <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </p>
+              <ul class="rewievs__list">
+                <li class="rewievs__item active--class" data-linked-with="one">
+                  <div class="rewievs__display-inner">
+                    <div class="rewievs__avatar">
+                      <img src="/img/feedback/billy_big.png" alt="photo" class="rewievs__avatar-img">
+                    </div>
+                    <article class="rewievs__content">
+                      <h3 class="rewievs__title">Отличный звук</h3>
+                      <div class="rewievs__text">
+                        <p>Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </p>
+                      </div>
+                      <div class="rewievs__autor">Билли Айлиш</div>
+                    </article>
                   </div>
-                  <div class="rewievs__autor">Билли Айлиш</div>
-                </article>
-              </div>
+                </li>
+                <li class="rewievs__item" data-linked-with="two">
+                  <div class="rewievs__display-inner">
+                    <div class="rewievs__avatar">
+                      <img src="/img/feedback/vadim_big.png" alt="photo" class="rewievs__avatar-img">
+                    </div>
+                    <article class="rewievs__content">
+                      <h3 class="rewievs__title">Крутой дизайн</h3>
+                      <div class="rewievs__text">
+                        <p>После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.  </p>
+                      </div>
+                      <div class="rewievs__autor">Вадим Грачев</div>
+                    </article>
+                  </div>
+                </li>
+                <li class="rewievs__item" data-linked-with="three">
+                  <div class="rewievs__display-inner">
+                    <div class="rewievs__avatar">
+                      <img src="/img/feedback/marry-big.png" alt="photo" class="rewievs__avatar-img">
+                    </div>
+                    <article class="rewievs__content">
+                      <h3 class="rewievs__title">На долго хватает заряда</h3>
+                      <div class="rewievs__text">
+                        <p>Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.</p>
+                      </div>
+                      <div class="rewievs__autor">Мария Орлова</div>
+                    </article>
+                  </div>
+                </li>
+              </ul>
             </div>
             <ul class="rewievs__switcher">
               <li class="rewievs__switcher-item interactive-avatar interactive-avatar--active">
-                <a href="#" class="interactive-avatar__link"><img src="/img/feedback/billy_big.png" alt="photo" class="interactive-avatar__img"></a>
+                <a href="#" class="interactive-avatar__link" data-open="one"><img src="/img/feedback/billy_big.png" alt="photo" class="interactive-avatar__img"></a>
               </li>
               <li class="rewievs__switcher-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link"><img src="/img/feedback/marry-big.png" alt="photo" class="interactive-avatar__img"></a>
+                <a href="#" class="interactive-avatar__link" data-open="two"><img src="/img/feedback/vadim_small.png" alt="photo" class="interactive-avatar__img"></a>
               </li>
               <li class="rewievs__switcher-item interactive-avatar">
-                <a href="#" class="interactive-avatar__link"><img src="/img/feedback/vadim_big.png" alt="photo" class="interactive-avatar__img"></a>
+                <a href="#" class="interactive-avatar__link" data-open="three"><img src="/img/feedback/mary_small.png" alt="photo" class="interactive-avatar__img"></a>
               </li>
             </ul>
           </div>
@@ -367,39 +448,40 @@
         <div class="container">
           <h2 class="order__title">Закажите доставку</h2>
           <form class="form">
+            <input type="hidden" name="to" value="somewhere@mail.com">
             <div class="form__col">
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="input__form">
+                  <input type="text" name="name" class="input__form">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" class="input__form">
+                  <input type="text" name="phone" class="input__form">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Улица</div>
-                  <input type="text" class="input__form">
+                  <input type="text" name="street" class="input__form">
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Дом</div>
-                  <input type="text" class="input__form">
+                  <input type="text" name="home" class="input__form">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Корпус</div>
-                  <input type="text" class="input__form">
+                  <input type="text" name="part" class="input__form">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Квартира</div>
-                  <input type="text" class="input__form">
+                  <input type="text" name="flat" class="input__form">
                 </label>
                 <label class="form__block">
                   <div class="form__title">Этаж</div>
-                  <input type="text" class="input__form">
+                  <input type="text" name="floor" class="input__form">
                 </label>
               </div>
             </div>
@@ -407,7 +489,7 @@
               <div class="form__row form__row--flow">
                 <label class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea class="input__form form__input form__input--textarea"></textarea>
+                  <textarea class="input__form form__input form__input--textarea" name="comment"></textarea>
                 </label>
               </div>
               <div class="form__row form__row--flow">
@@ -437,6 +519,16 @@
               </div>
             </div>
           </form>
+        </div>
+        <div class="modal" data-fancybox id="modal">
+          <div class="modal__container">
+            <div class="modal__content">
+              Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+              <a href="#" class="btn app-close-modal">Закрыть</a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section section--map">
@@ -504,5 +596,13 @@
       <li class="fixed-menu__item"> <a href="#" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="/js/hamburger-menu.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/team.js"></script>
+  <script src="/js/rewievs.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="/js/modal.js"></script>
 </body>
 </html>

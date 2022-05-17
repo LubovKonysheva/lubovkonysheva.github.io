@@ -72,6 +72,7 @@
   }
 }
 
+
 .form__input--textarea {
   // width: 450px;
   height: rem(154px);
@@ -93,6 +94,11 @@
     outline: none;
   }
 }
+
+.form__input-error {
+  border: solid 2px $red;
+}
+
 
 
 .form__controls {
