@@ -1,6 +1,10 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 //z-fixed-menu
 $z-fixed-menu:100;
 
@@ -11,6 +15,7 @@ $black: #181818;
 
 //setups
 @import "normalize/normalize";
+@import "media";
 @import "layout";
 @import "blocks/hero";
 @import "blocks/header";
@@ -27,11 +32,17 @@ $black: #181818;
 @import "blocks/fixed";
 @import "blocks/humans";
 @import "blocks/team";
-@import "blocks/footer";
 @import "blocks/contacts";
+@import "blocks/footer";
 @import "blocks/social";
 @import "blocks/menu";
 @import "blocks/phone";
 @import "blocks/logo";
-
+@import "blocks/hamburger";
+@import "blocks/map";
+@import "blocks/shop";
+@import "blocks/thesis";
+@import "blocks/lower";
+@import "blocks/depiction";
+@import "blocks/compound";
 
