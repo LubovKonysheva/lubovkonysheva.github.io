@@ -7,7 +7,7 @@ const validateFields = (form, fieldsArray) => {
     }
   });
 
-  const errorFields = form.find("form__input-error");
+  const errorFields = form.find(".form__input-error");
 
   return errorFields.length === 0;
 }
@@ -39,41 +39,30 @@ $('.form').submit(e => {
         comment: comment.val(),
         to: to.val(),
         },
-        success: data => {
+        success: (data) => {
           content.text(data.message)
              $.fancybox.open({
               src: ".modal",
               type : 'inline',
     });
-
-        },
-        error: data => {
-          const message = data.responseJSON.message;
-          content.text(message)
-          console.log(data);
-          modal.addClass("error-modal")
-        }
+  },
+    error: (data) => {
+      const message = data.responseJSON.message;
+      content.text(message);
+      console.log(data);
+      modal.addClass("error-modal");
+      $.fancybox.open({
+        src: ".modal",
+        type : 'inline',
+      });
+    },
     });
   }
-
-
 });
 
+$(".app-close-modal").click(e => {
+  e.preventDefault();
 
-
-// $.fancybox.open([
-//     {
-//       src: ".modal",
-//       type: "inline",
-//     },
-// //   ]);
-
-// })
-
-
-// $(".app-close-modal").click(e => {
-//   e.preventDefault();
-
-//   $.fancybox.close ();
-// })
+  $.fancybox.close ();
+})
 

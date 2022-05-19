@@ -1,7 +1,7 @@
 .humans {
   display: flex;
   justify-content: space-between;
-  min-height: rem(318px);
+  min-height: rem(600px);
   align-items: flex-start;
   flex-wrap: wrap;
 
@@ -32,7 +32,7 @@
       margin-right: 0;
     }
 
-    @include phones{
+    @include tablets {
       margin-right: 0;
     }
 }
@@ -63,6 +63,10 @@
   overflow: hidden;
   height: 0;
   transition: height .3s;
+
+  @include tablets {
+    position: static;
+  }
 }
 
 .human__desc-name:focus ~ .human__desc-class { 
