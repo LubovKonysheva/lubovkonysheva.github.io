@@ -4,6 +4,7 @@
   margin-bottom: rem(15px);
   overflow: hidden;
   position: relative;
+  min-height: rem(348px);
 
   @include tablets {
     padding: rem(75px) rem(36px) rem(25px) rem(36px);
@@ -28,6 +29,15 @@
     top: rem(-65px);
   }
 }
+
+.rewievs__item {
+  display: none;
+  transition: .3s;
+
+  &.active--class {
+    display: block;
+  }
+  }
 
 .rewievs__display-inner {
   display: flex;
