@@ -1,0 +1,23 @@
+{
+  "name": "beats",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000#\u0004G\u00045\u00041\u0004=\u0004K\u00049\u0004 \u0000?\u0004@\u0004>\u00045\u0004:\u0004B\u0004 \u0000L\u0000O\u0000F\u0000T\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LubovKonysheva/lubovkonysheva.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LubovKonysheva/lubovkonysheva.github.io/issues"
+  },
+  "homepage": "https://github.com/LubovKonysheva/lubovkonysheva.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

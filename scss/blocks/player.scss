@@ -1,0 +1,55 @@
+.player--section {
+  background-color: #F8FAF9;
+}
+
+.player {
+  position: relative;
+  display: block;
+}
+
+.player-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player__elem::before {
+  content: url(/img/design/play.svg);
+  position: absolute;
+  left: 48%;
+  bottom: 39%;
+
+}
+
+.player__controls {
+  display: flex;
+  position: absolute;
+  background-color: #151515;
+  min-height: rem(36px);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 rem(25px);
+}
+
+.player__shkala::after {
+  position: absolute;
+  content: url(/img/video/regulator.svg);
+  z-index: 1;
+}
+
+
+.player__playback {
+  display: flex;
+}
+
+.player__playback-button {
+  align-items: center;
+  display: flex;
+}
+
+.player__duration {
+  color: #F8FAF9;
+  display: flex;
+  align-items: center;
+}

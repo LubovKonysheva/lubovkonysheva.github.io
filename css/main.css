@@ -2111,3 +2111,76 @@ img {
 .error-modal .modal__content {
   color: #E01F3D;
 }
+
+.player--section {
+  background-color: #F8FAF9;
+}
+
+.player {
+  position: relative;
+  display: block;
+}
+
+.player-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player__elem::before {
+  content: url(/img/design/play.svg);
+  position: absolute;
+  left: 48%;
+  bottom: 39%;
+}
+
+.player__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background-color: #151515;
+  min-height: 2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 1.3888888889rem;
+}
+
+.player__shkala::after {
+  position: absolute;
+  content: url(/img/video/regulator.svg);
+  z-index: 1;
+}
+
+.player__playback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.player__playback-button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.player__duration {
+  color: #F8FAF9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
