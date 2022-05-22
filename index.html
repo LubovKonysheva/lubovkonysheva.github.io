@@ -370,11 +370,59 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section section--vertical-menu">
-        <div class="container">
-          <img src="/img/vertical_slider/Slider.png" alt="vertical slide menu" class="vertical-menu">
-        </div>
-      </section> -->
+      <section class="section products-menu-section">
+        <h1 class="section__title products-menu-section__title">Цвета</h1>
+        <ul class="products-menu">
+          <li class="produts-menu__item">
+            <a class="products-menu__title" href="#">
+              <img src="/img/vertical_slider/grey.svg" alt="" class="products-menu__image">
+              <div class="products-menu__text">"Атласное серебро"</div>
+            </a>
+            <div class="products-menu__content">
+              <div class="products-menu__container">
+                <button class="products-menu__close" type="button">
+                  <img class="products-menu__close-img" src="/img/vertical_slider/close.png" alt="close">
+                </button>
+                <div class="products-menu__content-text">
+                  Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5-минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="produts-menu__item">
+            <a class="products-menu__title" href="#">
+              <img src="/img/vertical_slider/black.svg" alt="" class="products-menu__image">
+              <div class="products-menu__text">"Черный матовый"</div>
+            </a>
+            <div class="products-menu__content">
+              <div class="products-menu__container">
+                <button class="products-menu__close" type="button">
+                  <img class="products-menu__close-img" src="/img/vertical_slider/close.png" alt="close">
+                </button>
+                <div class="products-menu__content-text">
+                  Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5-минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="produts-menu__item">
+            <a class="products-menu__title" href="#">
+              <img src="/img/vertical_slider/red.svg" alt="" class="products-menu__image">
+              <div class="products-menu__text">"Красный цитрус"</div>
+            </a>
+            <div class="products-menu__content">
+              <div class="products-menu__container">
+                <button class="products-menu__close" type="button">
+                  <img class="products-menu__close-img" src="/img/vertical_slider/close.png" alt="close">
+                </button>
+                <div class="products-menu__content-text">
+                  Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5-минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
       <section class="section section--rewiev">
         <div class="container">
           <h2 class="section__title section__title--rewievs">Отзывы</h2>
@@ -443,11 +491,9 @@
         <div class="container">
           <h2 class="section__title">Как мы работаем</h2>
           <div class="player-section__container">
-            <div class="player active">
+            <div class="player">
               <div class="player__wrapper">
-                <div id="yt-player" class="player__elem">
-                  <img src="video/video.svg" alt="video">
-                </div>
+                <div id="yt-player" class="player__elem"></div>
                 <div class="player__splash"></div>
                 <div class="player__controls">
                   <button class="player__start">
@@ -455,13 +501,11 @@
                   </button>
                   <div class="player__playback">
                     <button class="player__playback-button">
-                      <img src="/img/video/regulator.svg" alt="player__regulator">
-                      <img src="/img/video/shkala.svg" alt="player__shkala">
                     </button>
                   </div>
                   <div class="player__duration">
                     <span class="player__duration-complited">0:00:</span>
-                    <span class="player__duration-estimate"> 0:00</span>
+                    <span class="player__duration-estimate">0:00</span>
                   </div>
                 </div>
               </div>
@@ -556,10 +600,8 @@
           </div>
         </div>
       </section>
-      <section class="section section--map">
-        <div class="map">
-          <img src="/img/map/map.png" class="map__img" alt="map">
-        </div>
+      <section class="section map--section">
+          <div class="map" id="map"></div>
       </section>
       <footer class="footer">
         <div class="container footer__content">
@@ -623,10 +665,15 @@
   </nav>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
   <script src="/js/hamburger-menu.js"></script>
   <script src="/js/script.js"></script>
   <script src="/js/team.js"></script>
+  <script src="/js/products.js"></script>
   <script src="/js/rewievs.js"></script>
 	<script src="/js/modal.js"></script>
+  <script src="/js/player.js"></script>
+  <script src="/js/map.js"></script>
 </body>
 </html>
