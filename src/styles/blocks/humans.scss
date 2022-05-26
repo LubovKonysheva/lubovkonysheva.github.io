@@ -1,0 +1,115 @@
+.humans {
+  display: flex;
+  justify-content: space-between;
+  min-height: rem(600px);
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  &.humans--version--mobile {
+    display: none;
+  }
+
+  @include tablets{
+
+    &.humans--version--desctop {
+      display: none;
+    }
+
+    &.humans--version--mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: rem(174px);
+    }
+  }
+}
+
+.humans__item {
+    margin-right: rem(20px);
+    flex: 1;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include tablets {
+      margin-right: 0;
+    }
+}
+
+.human {
+  display: flex;
+  justify-content: center;
+
+  @include tablets{
+    flex-direction: column;
+    max-width: rem(222px);
+  }
+}
+
+.human__photo-img {
+  display: block;
+  max-width: rem(220px);
+  max-height: rem(290px);
+  margin-bottom: rem(15px);
+}
+
+.human {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.human__desc-class {
+  overflow: hidden;
+  height: 0;
+  transition: height .3s;
+
+  @include tablets {
+    position: static;
+  }
+}
+
+.human__desc-name:focus ~ .human__desc-class { 
+  display: block; 
+  margin-left: rem(3px);
+  }
+
+.human__desc-name {
+  font-weight: 700;
+  text-align: center;
+
+  &::after {
+    content: url(/img/design/triangle_small.png);
+    margin-left: rem(3px);
+  }
+}
+
+.human__photo-img {
+  max-height: rem(290px);
+  max-width: rem(220px);
+}
+
+.human__desc-class__title {
+  color: #292929;
+  font-weight: 400;
+  font-size: rem(16px);
+  text-align: center;
+
+  @include phones{
+    font-size: rem(18px);
+    line-height: rem(21px);
+    color: #000000;
+  }
+  
+}
+
+.human__desc-class__text {
+  font-weight: 400;
+  font-size: rem(16px);
+  text-align: center;
+  color: #666666;
+
+  @include phones{
+    line-height: rem(19px);
+  }
+}

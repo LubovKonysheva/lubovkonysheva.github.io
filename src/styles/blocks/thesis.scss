@@ -1,0 +1,28 @@
+.thesis {
+  display: flex;
+
+  @include tablets {
+    justify-content: space-evenly;
+  }
+}
+
+.thesis__items {
+  margin-right: rem(85px);
+
+  @include tablets {
+    margin-right: 0;
+  }
+}
+
+.thesis_name {
+  font-size: rem(16px);
+  line-height: rem(19px);
+  color: #666666;
+}
+
+.thesis_desc {
+  font-weight: 700;
+  font-size: rem(18px);
+  line-height: rem(21px);
+  color: #000000;
+}

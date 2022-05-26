@@ -1,0 +1,93 @@
+.player--section {
+  background-color: #F8FAF9;
+}
+
+.player {
+  position: relative;
+  display: block;
+  min-height: rem(391px);
+  min-width: rem(662px);
+
+  &.paused .player__splash {
+    visibility: hidden;
+  }
+
+  &.active .player__splash {
+    visibility: hidden;
+  }
+
+  &.paused .player__start {
+    visibility: hidden;
+  }
+
+  &.paused .player__start::before {
+    display: block;
+    position: absolute;
+    visibility: visible;
+    content: url(/img/video/paused_2.svg);
+  }
+}
+
+.player-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player__controls {
+  display: flex;
+  position: absolute;
+  background-color: #151515;
+  min-height: rem(36px);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 rem(25px);
+  justify-content: space-between;
+}
+
+
+.player__playback {
+  height: rem(16px);
+  width: rem(446px);
+  position: relative;
+
+  &::before{
+    content: url(/img/video/shkala.svg);
+  }
+}
+
+.player__playback-button {
+  position: absolute;
+  background: $red;
+  border-radius: 50%;
+  border: none;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  left: 0;
+
+}
+
+.player__duration {
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.player__paused {
+  width: rem(28px);
+}
+
+.player__splash {
+  background: url(/img/video/back.png) center center/cover no-repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  cursor: pointer;
+}

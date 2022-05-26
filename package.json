@@ -1,10 +1,11 @@
 {
   "name": "beats",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000#\u0004G\u00045\u00041\u0004=\u0004K\u00049\u0004 \u0000?\u0004@\u0004>\u00045\u0004:\u0004B\u0004 \u0000L\u0000O\u0000F\u0000T\u0000\r\u0000 \u0000",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "cross-env NODE_ENV=dev gulp",
+    "build": "cross-env NODE_ENV=prod gulp buld"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,30 @@
   },
   "homepage": "https://github.com/LubovKonysheva/lubovkonysheva.github.io#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "browser-sync": "^2.27.10",
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^3.0.0",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-smile-px2rem": "^0.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgo": "^2.2.1",
+    "jquery": "^3.6.0",
+    "node-sass": "^7.0.1",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.52.1"
   }
 }

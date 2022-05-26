@@ -1,0 +1,31 @@
+
+.social-media__link {
+  display: flex;
+  text-decoration: none;
+  width: rem(30px);
+  height: rem(30px);
+  background: center center no-repeat;
+
+  @include phones {
+    width: rem(28px);
+    height: rem(28px);
+  }
+} 
+
+.social-media__item {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.social-media__item:last-child {
+  margin-right: 0;
+}
+
+.social-media__pic {
+  fill: #B3B3B3;
+  margin-right: rem(2px);
+
+  &:hover {
+    fill: black;
+  }
+}

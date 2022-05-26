@@ -1,0 +1,51 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//z-fixed-menu
+$z-fixed-menu:100;
+
+//colors
+$gray: #F5F5F5;
+$red: #E01F3D;
+$black: #181818;
+
+//setups
+@import "blocks/media";
+@import "blocks/layout";
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/features";
+@import "blocks/btn";
+@import "blocks/section";
+@import "blocks/headline";
+@import "blocks/benefits";
+@import "blocks/rewievs";
+@import "blocks/interactive-avatar";
+@import "blocks/order";
+@import "blocks/form";
+@import "blocks/radio";
+@import "blocks/fixed";
+@import "blocks/humans";
+@import "blocks/team";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/social";
+@import "blocks/menu";
+@import "blocks/phone";
+@import "blocks/logo";
+@import "blocks/hamburger";
+@import "blocks/map";
+@import "blocks/shop";
+@import "blocks/thesis";
+@import "blocks/lower";
+@import "blocks/depiction";
+@import "blocks/compound";
+@import "blocks/modal";
+@import "blocks/player";
+@import "blocks/products";
+@import "blocks/video";
+
