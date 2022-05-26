@@ -42,7 +42,7 @@ task('styles', () => {
   .pipe(concat('main.min.scss'))
   .pipe(sassGlob())
   .pipe(sass().on('error', sass.logError))
-  .pipe(px2rem())
+  // .pipe(px2rem())
   //  .pipe(gulpif(env === 'prod', gcmq()))
   .pipe(gulpif(env === 'prod', autoprefixer({
     cascade: false
@@ -85,4 +85,4 @@ watch('./src/*.html', series('copy:html'));
 watch('./src/script/*.js', series('scripts'));
  
 task('default', series('clean', 'copy:html', 'styles', 'scripts', 'server'));
-task('build', series('clean','copy:html', 'styles', 'scripts', 'icons'));
+task('build', series('clean','copy:html', 'styles', 'scripts'));
