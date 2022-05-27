@@ -1,0 +1,99 @@
+.section {
+  // height: 100vh;
+  height: 100%;
+  min-height: rem(650px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  &--benefits {
+    &::before {
+      position: absolute;
+      content: url(img/design/triangle.png);
+      bottom: rem(-20px);
+      left: 7%;
+      z-index: 1;
+
+      @include phones {
+        display: none;
+      }
+  }
+}
+  &--rewiev {
+    &::before {
+      position: absolute;
+      content: url(img/design/ellipse.png);
+      bottom: rem(-20px);
+      left: 7%;
+      z-index: 1;
+    }
+  }
+
+&--order {
+  background-color: #000000;
+  height: 110%;
+
+  @include tablets {
+    height: 106%;
+  }
+
+  @include phones {
+    height: 106%;
+  }
+    &::before {
+      position: absolute;
+      content: url(img/design/polygon.png);
+      top: rem(-24px);
+      right: 7%;
+
+      @include tablets {
+        bottom: rem(764px);
+      }
+      @include phones {
+        bottom: rem(764px);
+      }
+      }
+    }
+}
+      
+
+.section__title {
+  font-weight: bold;
+  font-size: rem(48px);
+  line-height: rem(52px);
+  text-transform: uppercase ;
+  margin-bottom: rem(60px);
+  text-align: center;
+
+  @include phones {
+    font-size: rem(36px);
+  }
+}
+
+.section--font-colorwhite {
+  color: #fff;
+}
+
+.video-container {
+  padding: rem(100px) 0 rem(100px);
+  position: relative;
+
+  &::before {
+    content: url(video/vector.png);
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(268px);
+  }
+}
+
+.section__title--rewievs {
+  margin-bottom: rem(32px);
+
+  @include phones {
+    font-size: rem(32px);
+  }
+}
+  
