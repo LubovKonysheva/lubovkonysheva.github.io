@@ -20,3 +20,4 @@ left.addEventListener("click", (e) => {
   loop("left", e);
 });
 // $('.shop__list').bxSlider();
+

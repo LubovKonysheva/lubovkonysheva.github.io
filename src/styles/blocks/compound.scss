@@ -3,7 +3,9 @@
   width: rem(235px);
   padding: rem(24px);
   border-radius: 2%;
-  background: grey;
+  background:rgba(202, 201, 201, 0.8);
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(40px);
   opacity: 0;
 }
 

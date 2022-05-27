@@ -34,14 +34,19 @@
     "gulp-sass-glob": "^1.1.0",
     "gulp-smile-px2rem": "^0.1.0",
     "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgo": "^2.2.1",
+    "gulp-svg-sprite": "^1.5.0",
+    "node-sass": "^7.0.1",
+    "gulp-sass": "^5.1.0",
+    "dart-sass": "^1.25.0",
     "gulp-uglify": "^3.0.2"
+
   },
   "dependencies": {
-    "gulp-sass": "^5.1.0",
-    "gulp-svg-sprite": "^1.5.0",
-    "gulp-svgo": "^2.2.1",
+    "@fancyapps/fancybox": "^3.5.7",
     "jquery": "^3.6.0",
-    "node-sass": "^7.0.1",
+    "jquery-touchswipe": "^1.6.19",
+    "mobile-detect": "^1.4.5",
     "normalize.css": "^8.0.1",
     "sass": "^1.52.1"
   }

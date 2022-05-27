@@ -1,6 +1,6 @@
 const { src, dest, task, series, watch } = require("gulp");
 const rm = require('gulp-rm');
-const sass = require('gulp-sass')(require('sass'));
+const sass = require('gulp-sass')(require('dart-sass'));
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
@@ -30,10 +30,22 @@ task('copy:html', () => {
    .pipe(dest('dist'))
    .pipe(reload({ stream: true }));
 })
+
+task('copy:image', () => {
+  return src('src/img/**/*.*')
+    .pipe(dest('dist/img'))
+    .pipe(reload({ stream: true }));
+ })
+
+ task('copy:video', () => {
+  return src('src/video/**/*.*')
+    .pipe(dest('dist/video'))
+    .pipe(reload({ stream: true }));
+ })
  
 const styles = [
  'node_modules/normalize.css/normalize.css',
- "src/styles/main.scss"
+ 'src/styles/main.scss'
 ];
  
 task('styles', () => {
@@ -55,11 +67,14 @@ task('styles', () => {
 
 const libs = [
   'node_modules/jquery/dist/jquery.js',
+  'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
+  'node_modules/jquery-touchswipe/jquery.touchSwipe.min.js',
+  'node_modules/mobile-detect/mobile-detect.min.js',
   'src/script/*.js'
  ];
 
-task('scripts', (libs) => {
-  return src('src/script/*.js')
+task('scripts', () => {
+  return src(libs)
     .pipe(sourcemaps.init())
     .pipe(concat('main.min.js', {newLine: ';'}))
     .pipe(gulpif(env === 'prod', babel({
@@ -84,5 +99,5 @@ watch('./src/styles/**/*.scss', series('styles'));
 watch('./src/*.html', series('copy:html'));
 watch('./src/script/*.js', series('scripts'));
  
-task('default', series('clean', 'copy:html', 'styles', 'scripts', 'server'));
-task('build', series('clean','copy:html', 'styles', 'scripts'));
+task('default', series('clean', 'copy:html', 'copy:image', 'copy:video', 'styles', 'scripts', 'server'));
+task('build', series('clean','copy:html', 'copy:image','copy:video', 'styles', 'scripts'));

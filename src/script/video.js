@@ -18,7 +18,7 @@ window.addEventListener('load', function () {
 
   durationControl.min = 0;
   durationControl.value = 0;
-  durationControl.max = video.duration;
+  durationControl.max = parseInt(video.duration);
   durationControl.addEventListener("input", setVideoDuration);
 
   soundControl.min = 0;
