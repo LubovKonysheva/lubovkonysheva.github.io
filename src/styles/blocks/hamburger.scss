@@ -11,7 +11,7 @@
     display: inline-flex;
 
     &.is-active::before {
-      content: url(/img/main/close.png);
+      content: url(img/main/close.png);
       z-index: 5;
     }
     }

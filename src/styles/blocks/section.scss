@@ -10,7 +10,7 @@
   &--benefits {
     &::before {
       position: absolute;
-      content: url(/img/design/triangle.png);
+      content: url(img/design/triangle.png);
       bottom: rem(-20px);
       left: 7%;
       z-index: 1;
@@ -23,7 +23,7 @@
   &--rewiev {
     &::before {
       position: absolute;
-      content: url(/img/design/ellipse.png);
+      content: url(img/design/ellipse.png);
       bottom: rem(-20px);
       left: 7%;
       z-index: 1;
@@ -43,7 +43,7 @@
   }
     &::before {
       position: absolute;
-      content: url(/img/design/polygon.png);
+      content: url(img/design/polygon.png);
       top: rem(-24px);
       right: 7%;
 
@@ -80,7 +80,7 @@
   position: relative;
 
   &::before {
-    content: url(/video/vector.png);
+    content: url(video/vector.png);
     display: block;
     position: absolute;
     left: 50%;

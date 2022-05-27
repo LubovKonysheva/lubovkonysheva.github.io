@@ -13,7 +13,7 @@
 
   &::before {
     position: absolute;
-    content: url(/img/design/main.png);
+    content: url(img/design/main.png);
     bottom: rem(-29px);
     right: 18%;
 
@@ -22,7 +22,7 @@
 
 .hero__container {
   padding: rem(24px) 0;
-  background: url(/img/main/Ellipse_5.png) right center / 50% auto no-repeat;
+  background: url(img/main/Ellipse_5.png) right center / 50% auto no-repeat;
 
   @include tablets {
     background: none;
@@ -53,7 +53,7 @@
         content: "";
         width: rem(316px);
         height: rem(350px);
-        background: url(/img/main/Ellipse_tablets.png) center center / contain no-repeat;
+        background: url(img/main/Ellipse_tablets.png) center center / contain no-repeat;
         margin-bottom: rem(15px);
       }
 
